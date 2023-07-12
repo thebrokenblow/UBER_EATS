@@ -15,7 +15,27 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 720px) {
+  .container-const-country-kitchen {
+    flex-direction: row;
+  }
+  .hero-restaurant {
+    padding-left: 8px;
+  }
+}
+
 @media (max-width: 540px) {
+  .container-const-country-kitchen {
+    flex-direction: column;
+  }
+  .button-hero {
+    margin-top: 15px;
+    margin-left: 0x;
+    background-color: #327430;
+  }
+  .const-country-kitchen {
+    padding: 0px;
+  }
   .information-hero-restaurant {
     width: 100%;
   }
@@ -25,28 +45,19 @@
   }
 }
 
-@media (max-width: 720px) {
-  .hero-restaurant {
-    padding-left: 8px;
-  }
-}
-
 .name-restaurant {
   color: #1d1d1d;
   font-family: Roboto;
   font-size: 36px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  text-align: center;
 }
 
 .const-country-kitchen {
   color: #626262;
   font-family: Roboto;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   margin-right: 20px;
 }
 
@@ -55,16 +66,34 @@
   color: #fff;
   font-family: Roboto;
   font-size: 13px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
-  margin-left: 20px;
+  background-color: #262626;
 }
 
 .navbar-category {
   padding-left: 80px;
   height: 80px;
   border-bottom: 2px solid rgba(117, 117, 117, 0.2);
+}
+
+@media (max-width: 720px) {
+  .navbar-category {
+    padding-left: 8px;
+  }
+
+  .button-hero {
+    margin-left: 20x;
+  }
+
+  .const-country-kitchen {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  .navbar-category {
+    visibility: hidden;
+  }
 }
 
 .category-item {
@@ -77,4 +106,16 @@
 
 .select-category-item {
   color: #327430;
+}
+
+.hero-container-restaurant {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-const-country-kitchen {
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
