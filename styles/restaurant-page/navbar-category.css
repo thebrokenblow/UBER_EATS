@@ -4,13 +4,14 @@
   border-bottom: 2px solid rgba(117, 117, 117, 0.2);
 }
 
-@media (max-width: 720px) {
+@media (max-width: 991px) {
   .navbar-category {
     padding-left: 8px;
+    visibility: visible;
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 767px) {
   .navbar-category {
     visibility: hidden;
   }
