@@ -16,17 +16,17 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 991px) {
   .container-const-country-kitchen {
     flex-direction: row;
   }
 
   .hero-restaurant {
-    padding-left: 8px;
+    padding-left: 80px;
   }
 
   .button-hero {
-    margin-left: 20x;
+    margin-left: 20px;
   }
 
   .const-country-kitchen {
@@ -34,15 +34,14 @@
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 767px) {
   .container-const-country-kitchen {
     flex-direction: column;
   }
 
   .button-hero {
     margin-top: 15px;
-    margin-left: 0x;
-    background-color: #327430;
+    margin-left: 0px;
   }
 
   .information-hero-restaurant {
