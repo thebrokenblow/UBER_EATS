@@ -10,16 +10,13 @@
     <script src="vendor/js/bootstrap.min.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles/restaurant-page/navbar-category.css" />
     <link rel="stylesheet" href="/styles/restaurant-page/hero-restaurant.css" />
+    <link rel="stylesheet" href="/styles/restaurant-page/list-product.css" />
     <link rel="stylesheet" href="/styles/header.css" />
     <title>Ресторан</title>
   </head>
@@ -66,92 +63,128 @@
         <a class="nav-link category-item" href="/">Десерты</a>
       </div>
     </nav>
-    <style>
-      @media screen and (min-width: 100px) {
-        .list-product {
-          margin-left: 70px;
-          margin-right: 70px;
-        }
-      }
-
-      @media screen and (max-width: 720px) {
-        .list-product {
-          margin-left: 8px;
-          margin-right: 8px;
-        }
-      }
-    </style>
-    <div class="list-product" style="margin-top: 55px">
-      <h1
-        style="
-          color: #1d1d1d;
-          font-size: 22px;
-          font-weight: 400;
-          line-height: 34px;
-        "
-      >
-        Закуски
-      </h1>
+    <div class="list-product">
+      <h1 class="name-category">Закуски</h1>
       <div
-        style="margin-top: 32px"
-        class="d-flex flex-wrap justify-content-between"
+        class="list-product-container d-flex flex-wrap justify-content-between"
       >
         <div
-          style="border: 2px solid #d8d8d8; margin-bottom: 50px"
-          class="d-flex justify-content-between col-12 col-md-12 col-lg-5"
+          class="product-item d-flex justify-content-between col-12 col-md-12 col-lg-12 col-xl-5"
         >
           <div
-            style="padding: 15px"
-            class="d-flex flex-column justify-content-between"
+            class="product-item-container d-flex flex-column justify-content-between"
           >
             <div>
-              <h3
-                style="
-                  color: #1d1d1d;
-                  font-family: Roboto;
-                  font-size: 16px;
-                  font-style: normal;
-                  font-weight: 400;
-                  line-height: 24px; /* 150% */
-                "
-              >
-                Сельдь на бородинском хлебе
-              </h3>
-              <h5
-                style="
-                  color: #626262;
-                  font-family: Roboto;
-                  font-size: 13px;
-                  font-style: normal;
-                  font-weight: 400;
-                  line-height: 21px; /* 161.538% */
-                "
-              >
-                С яйцом и огурцом
-              </h5>
+              <h3 class="name-product">Сельдь на бородинском хлебе</h3>
+              <h5 class="composition-product">С яйцом и огурцом</h5>
             </div>
-            <div
-              style="
-                color: #1d1d1d;
-                font-family: Roboto;
-                font-size: 15px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 21px;
-              "
-            >
-              240 ₽
-            </div>
+            <div class="cost-product">240 ₽</div>
           </div>
           <div>
             <img
-              style="width: 170px; height: 160px"
-              src="/images/Capture (3).png"
-              alt=""
+              class="img-product"
+              src="/images/herring-on-borodino-bread.png"
+              alt="Сельдь на бородинском хлебе"
+            />
+          </div>
+        </div>
+        <div
+          class="product-item d-flex justify-content-between col-12 col-md-12 col-lg-12 col-xl-5"
+        >
+          <div
+            class="product-item-container d-flex flex-column justify-content-between"
+          >
+            <div>
+              <h3 class="name-product">Соленья ассорти</h3>
+            </div>
+            <div class="cost-product">320 ₽</div>
+          </div>
+          <div>
+            <img
+              class="img-product"
+              src="/images/assorted-pickles.png"
+              alt="Соленья ассорти"
+            />
+          </div>
+        </div>
+        <div
+          class="product-item d-flex justify-content-between col-12 col-md-12 col-lg-12 col-xl-5"
+        >
+          <div
+            class="product-item-container d-flex flex-column justify-content-between"
+          >
+            <div>
+              <h3 class="name-product">Грибы маринованные</h3>
+            </div>
+            <div class="cost-product">300 ₽</div>
+          </div>
+          <div>
+            <img
+              class="img-product"
+              src="/images/marinated-mushrooms.png"
+              alt="Соленья ассорти"
+            />
+          </div>
+        </div>
+        <div
+          class="product-item d-flex justify-content-between col-12 col-md-12 col-lg-12 col-xl-5"
+        >
+          <div
+            class="product-item-container d-flex flex-column justify-content-between"
+          >
+            <div>
+              <h3 class="name-product">Сало домашнее с горчицей</h3>
+            </div>
+            <div class="cost-product">320 ₽</div>
+          </div>
+          <div>
+            <img
+              class="img-product"
+              src="/images/salo-homemade-with-mustard.png"
+              alt="Соленья ассорти"
+            />
+          </div>
+        </div>
+        <div
+          class="product-item d-flex justify-content-between col-12 col-md-12 col-lg-12 col-xl-5"
+        >
+          <div
+            class="product-item-container d-flex flex-column justify-content-between"
+          >
+            <div>
+              <h3 class="name-product">Малосольная семга</h3>
+            </div>
+            <div class="cost-product">390 ₽</div>
+          </div>
+          <div>
+            <img
+              class="img-product"
+              src="/images/salted-salmon.png"
+              alt="Соленья ассорти"
+            />
+          </div>
+        </div>
+        <div
+          class="product-item d-flex justify-content-between col-12 col-md-12 col-lg-12 col-xl-5"
+        >
+          <div
+            class="product-item-container d-flex flex-column justify-content-between"
+          >
+            <div>
+              <h3 class="name-product">Язык говяжий с хреном</h3>
+            </div>
+            <div class="cost-product">350 ₽</div>
+          </div>
+          <div>
+            <img
+              class="img-product"
+              src="/images/beef-tongue-with-horseradish.png"
+              alt="Соленья ассорти"
             />
           </div>
         </div>
       </div>
     </div>
+    
   </body>
 </html>
